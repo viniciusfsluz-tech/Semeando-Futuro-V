@@ -1,0 +1,272 @@
+<!--aviso de dados ficticios, campos obrigatorios-->
+<!--focus e outline destacado ,iframe google maps com titulo, tabela com horario de atendimento -->
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Vinícius F" />
+    <title>📞 Contato</title>
+    <link rel="icon" href="imagens/favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Bricolage+Grotesque:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Entre em Contato</h1>
+      <hr />
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="tema.html">Tema</a></li>
+          <li><a href="extra.html">Extra</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Aviso Importante</h2>
+
+        <p>
+          <strong>ATENÇÃO: </strong>Todos os dados de contato apresentados nesta
+          página são fictícios e foram criados exclusivamente para fins
+          acadêmicos e desenvolvimento deste projeto.
+        </p>
+      </section>
+      <section>
+        <h2>Fale Conosco</h2>
+
+        <p>
+          Utilize o formulário abaixo para enviar dúvidas, sugestões,
+          comentários ou relatos relacionados ao tema Segurança Alimentar e
+          Fome.
+        </p>
+      </section>
+
+      <form>
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+
+          <p>
+            <label for="Input_Nome">Nome:</label>
+            <input type="text" id="Input_Nome" name="nome" required />
+          </p>
+
+          <p>
+            <label for="Input_sobreNome">Sobrenome:</label>
+            <input type="text" id="Input_sobreNome" name="sobrenome" />
+          </p>
+
+          <p>
+            <label for="Input_idade">Idade:</label>
+            <input
+              type="number"
+              id="Input_idade"
+              name="idade"
+              min="5"
+              max="100"
+            />
+          </p>
+          <p>
+            <label for="input-data">Data de nascimento:</label>
+
+            <input type="date" id="input-data" name="dataNascimento" required />
+          </p>
+          <p>
+            <label for="Input_tel">Telefone:</label>
+            <input
+              type="tel"
+              id="Input_tel"
+              name="telefone"
+              placeholder="(99) 99999-9999"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="input_Email">E-mail:</label>
+            <input type="email" id="input_Email" name="email" required />
+          </p>
+
+          <p>
+            <label for="input-Estado">Estado:</label>
+
+            <select name="estado" id="input-Estado">
+              <option value="SP">São Paulo</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PR">Paraná</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="RS">Rio Grande do Sul</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <section>
+          <h3>Forma de Contato Preferida</h3>
+
+          <p>
+            <input type="checkbox" id="input-whatsapp" />
+            <label for="input-whatsapp">WhatsApp</label>
+          </p>
+
+          <p>
+            <input type="checkbox" id="input-email" />
+            <label for="input-email">E-mail</label>
+          </p>
+
+          <p>
+            <input type="checkbox" id="input-sms" />
+            <label for="input-sms">SMS</label>
+          </p>
+        </section>
+
+        <section>
+          <h3>Sexo</h3>
+
+          <p>
+            <input type="radio" id="masculino" name="sexo" required />
+            <label for="masculino">Masculino</label>
+          </p>
+
+          <p>
+            <input type="radio" id="feminino" name="sexo" required />
+            <label for="feminino">Feminino</label>
+          </p>
+        </section>
+
+        <section>
+          <h3>Tema de Interesse</h3>
+
+          <p>
+            <label for="input-escolha">Selecione:</label>
+
+            <select name="tema" id="input-escolha" required>
+              <option value="seguranca">Segurança Alimentar</option>
+              <option value="fome">Combate à Fome</option>
+              <option value="desperdicio">Desperdício de Alimentos</option>
+              <option value="bancos">Bancos de Alimentos</option>
+              <option value="politicas">Políticas Públicas</option>
+            </select>
+          </p>
+        </section>
+
+        <section>
+          <h3>Assunto da Mensagem</h3>
+
+          <select id="assunto" name="assunto" required>
+            <option value="">Selecione</option>
+            <option value="duvida">Dúvida sobre Segurança Alimentar</option>
+            <option value="sugestao">Sugestão de Conteúdo</option>
+            <option value="relato">
+              Relato sobre Fome ou Insegurança Alimentar
+            </option>
+            <option value="parceria">Proposta de Parceria</option>
+            <option value="outro">Outro Assunto</option>
+          </select>
+        </section>
+
+        <section>
+          <h3>Anexo (Opcional)</h3>
+
+          <p>
+            <label for="input-arquivo">Enviar arquivo:</label>
+            <input type="file" id="input-arquivo" name="arquivo" />
+          </p>
+        </section>
+
+        <section>
+          <h3>Sugestões e Comentários</h3>
+
+          <textarea
+            name="sugestao"
+            id="input-sugestao"
+            cols="40"
+            rows="10"
+            required
+          ></textarea>
+        </section>
+
+        <input type="hidden" name="origem" value="Projeto_Semeando_Futuro" />
+
+        <p>
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpar</button>
+        </p>
+      </form>
+      <section class="tabela-dados">
+        <h2>Horário de Atendimento</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Dia</th>
+              <th>Horário</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Segunda a Sexta</td>
+              <td>08h às 18h</td>
+            </tr>
+
+            <tr>
+              <td>Sábado</td>
+              <td>08h às 12h</td>
+            </tr>
+
+            <tr>
+              <td>Domingo</td>
+              <td>Fechado</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Outras Formas de Contato</h2>
+
+        <address>
+          <strong>Instituto Semeando Futuro</strong><br />
+
+          Rua das Flores, 123<br />
+          Centro - Cubatão/SP<br />
+          CEP: 11500-000<br />
+
+          Telefone: (13) 99999-9999<br />
+          E-mail: contato@semeandofuturo.com
+        </address>
+        <iframe
+          title="Mapa da localização fictícia do Instituto Semeando Futuro"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.580237731976!2d-46.42557468502073!3d-23.90563458455648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1c4021200001%3A0x88c42b109e25d2b7!2sIFSP%20-%20Campus%20Cubat%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1677000000000!5m2!1spt-BR!2sbr"
+          frameborder="0"
+        >
+        </iframe>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer>
+      <p>&copy; Semeando Futuro</p>
+      <p>ano 2026</p>
+      <p>Vinícius Ferreira | Luis Gustavo | Ruan Silva | Gabriel Mariano</p>
+      <p>
+        Contatos e informações de atendimento apresentados neste site são
+        fictícios e utilizados apenas para fins educacionais.
+      </p>
+    </footer>
+  </body>
+</html>
