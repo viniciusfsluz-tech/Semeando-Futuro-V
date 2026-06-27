@@ -3,20 +3,30 @@
 /*! DARK MODE */
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #121212;
-    color: #f5f5f5;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
   }
 }
-/* ========================================================================== */
-/* Cores Usadas no projeto */
-/* ========================================================================== */
-/*:root {
-  --cor-principal: #af5409;
+/* ==========================================================================
+  PALETA DE CORES
+========================================================================== */
+
+:root {
+  --cor-primaria: #af5409;
   --cor-secundaria: #f5d48a;
+  --cor-acento: #e55934;
+  --cor-topico: #e7b13a;
+
   --cor-fundo: #121212;
-  --fonte-corpo: "Bricolage Grotesque", sans-serif;
-  --fonte-titulo: "Asul", serif;
-}*/
+  --cor-fundo-secundario: #2a2a2a;
+
+  --cor-texto: #f5f5f5;
+  --cor-texto-escuro: #222222;
+  --cor-texto-inv: #ffffff;
+
+  --cor-tabela: #c76b00;
+  --cor-borda: #cccccc;
+}
 
 .boas-vindas {
   text-align: center;
@@ -70,10 +80,10 @@ figcaption {
 }
 
 .tabela-dados th {
-  background-color: #c76b00;
+  background-color: var(--cor-tabela);
   color: white;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--cor-borda);
 }
 
 .tabela-dados td {
@@ -186,8 +196,8 @@ h6 {
   font-family: "Asul", serif;
 }
 h1 {
-  background-color: #af5409;
-  color: #f5d48a;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
   text-align: center;
   padding: 15px;
 }
@@ -202,7 +212,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #e7b13a;
+  color: var(--cor-topico);
 }
 
 form h3 {
@@ -230,14 +240,14 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #f5d48a;
+  color: var(--cor-secundaria);
   font-weight: bold;
   font-family: "Playfair Display", serif;
   transition: 0.3s;
 }
 
 nav a:hover {
-  color: #e55934;
+  color: var(--cor-acento);
 }
 
 /* ========================================================================== */
@@ -249,7 +259,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #121212;
+  background-color: var(--cor-fundo);
 }
 
 header hr {
@@ -261,8 +271,8 @@ header hr {
 /* ========================================================================== */
 
 section {
-  background-color: #2a2a2a;
-  border-left: 5px solid #af5409;
+  background-color: var(--cor-fundo-secundario);
+  border-left: 5px solid var(--cor-primaria);
   padding: 15px;
   margin: 20px 0;
   border-radius: 8px;
@@ -276,8 +286,8 @@ input,
 select,
 textarea {
   background-color: #252525;
-  color: #ffffff;
-  border: 1px solid #c06a12;
+  color: var(--cor-texto-inv);
+  border: 1px solid var(--cor-primaria);
   border-radius: 4px;
   padding: 6px;
 }
@@ -351,8 +361,8 @@ textarea:focus {
 .btn-hero {
   display: inline-block;
 
-  background-color: #af5409;
-  color: white;
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto-inv);
 
   text-decoration: none;
 
@@ -366,7 +376,7 @@ textarea:focus {
 }
 
 .btn-hero:hover {
-  background-color: #c76b00;
+  background-color: var(--cor-tabela);
   transform: scale(1.05);
 }
 
@@ -375,8 +385,8 @@ textarea:focus {
 /* ========================================================================== */
 
 footer {
-  background-color: #af5409;
-  color: white;
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto-inv);
   text-align: center;
   padding: 15px;
 }
@@ -394,8 +404,8 @@ footer {
   border-left: none;
 }
 .card {
-  background-color: #2a2a2a;
-  border-top: 5px solid #af5409;
+  background-color: var(--cor-fundo-secundario);
+  border-top: 5px solid var(--cor-primaria);
 
   padding: 20px;
   border-radius: 10px;
@@ -416,7 +426,7 @@ footer {
 }
 
 .card h3 {
-  color: #f5d48a;
+  color: var(--cor-secundaria);
   margin-bottom: 10px;
   font-size: 1.5rem;
 }
@@ -484,8 +494,8 @@ footer {
 .menu-lateral {
   grid-area: aside;
 
-  background-color: #2a2a2a;
-  border-left: 5px solid #af5409;
+  background-color: var(--cor-fundo-secundario);
+  border-left: 5px solid var(--cor-primaria);
   border-radius: 8px;
 
   padding: 15px;
@@ -511,7 +521,7 @@ footer {
 }
 
 .menu-lateral a {
-  color: #f5d48a;
+  color: var(--cor-secundaria);
   text-decoration: none;
   font-weight: bold;
 }
