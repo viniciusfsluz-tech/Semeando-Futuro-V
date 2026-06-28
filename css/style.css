@@ -7,6 +7,19 @@
     color: var(--cor-texto);
   }
 }
+/* ===================================================
+  ESTILO.CSS — SEMEANDO FUTURO
+  Tema: Segurança Alimentar e Fome
+
+  Grupo:
+  Vinícius Ferreira
+  Luis Gustavo
+  Gabriel Mariano
+  Ruan Silva
+
+  Data: Junho/2026
+=================================================== */
+
 /* ==========================================================================
   PALETA DE CORES
 ========================================================================== */
@@ -26,6 +39,23 @@
 
   --cor-tabela: #c76b00;
   --cor-borda: #cccccc;
+}
+
+/* ===================================================
+  RESET E BASE
+=================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 .boas-vindas {
