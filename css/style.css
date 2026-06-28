@@ -56,7 +56,9 @@
 
   --cor-link-externo: red;
 }
-
+* {
+  box-sizing: border-box;
+}
 /* ===================================================
    3. BASE DO SITE
 =================================================== */
@@ -194,19 +196,6 @@ header {
 
 header hr {
   display: none;
-}
-
-header img {
-  display: block;
-  width: 300px;
-  margin: 20px auto;
-}
-
-.logo-central {
-  display: block;
-  width: 50%;
-  max-width: 800px;
-  margin: 20px auto;
 }
 
 /* Cabeçalho exclusivo da Home */
