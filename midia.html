@@ -44,10 +44,18 @@
 
         <div class="galeria">
           <figure>
-            <img
-              src="imagens/galeria/imagem1.jpeg"
-              alt="Campanha contra a fome mostrando uma tigela vazia"
-            />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="imagens/galeria/imagem1.jpeg"
+              />
+
+              <img
+                src="imagens/galeria/imagem1.jpeg"
+                alt="Campanha contra a fome mostrando uma tigela vazia"
+              />
+            </picture>
+
             <figcaption>
               Campanha de conscientização sobre a fome e o desperdício de
               alimentos.
