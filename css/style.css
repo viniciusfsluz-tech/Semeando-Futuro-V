@@ -221,6 +221,12 @@ header img {
   margin: 5px 0;
   font-size: 1.1rem;
 }
+.logo-central {
+  display: block;
+  width: 12%;
+  max-width: 90px;
+  margin: 10px auto;
+}
 
 /* ===================================================
    7. NAVEGAÇÃO
